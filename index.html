@@ -8,6 +8,8 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="stylesheet" href="assets/style.css">
 
+  <link rel="stylesheet" href="assets/image-fit.css">
+  <link rel="stylesheet" href="assets/place-time.css">
 <style id="imagined-badge-css">
 .imagined-badge{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .55rem;box-sizing:border-box;max-width:100%;margin:0 0 1rem;padding:.5rem .8rem;border:1.5px dashed rgba(60,50,40,.55);border-radius:12px;background:rgba(255,252,244,.92);color:#3d342b;font-family:inherit;line-height:1.35}
 .imagined-badge .ib-icon{flex:0 0 auto;width:22px;height:22px}
@@ -114,9 +116,25 @@
       <p>This file is about a shipwreck, and about the records that remain. People died when the ship struck, and many more were killed later, before help came. This file does not describe those deaths.</p>
     </div>
 
-    <article class="witness" id="witness-pelsaert">
+    
+
+    <section class="place-time" data-place-time="batavia" aria-label="Place and time">
+      <h3>Place and time</h3>
+      <p class="pt-lead"></p>
+      <div class="pt-mapcard"></div>
+      <p class="pt-maplbl" aria-live="polite"></p>
+      <div class="pt-ctl">
+        <button type="button" class="pt-play">▶ Play</button>
+        <input type="range" min="0" max="1" value="0">
+      </div>
+      <ol class="pt-tl" aria-label="Timeline of places and dates in this file"></ol>
+    </section>
+
+<article class="witness" id="witness-pelsaert">
       <figure>
+        <button type="button" class="portrait-zoom" aria-label="Enlarge. A silhouette of one person, not a likeness, labelled Francisco Pelsaert.">
         <img src="assets/silhouettes/pelsaert.png" alt="A silhouette of one person, not a likeness, labelled Francisco Pelsaert.">
+        </button>
         <figcaption>A silhouette, not a likeness.</figcaption>
       </figure>
       <div>
@@ -138,7 +156,9 @@
 
     <article class="witness" id="witness-hayes">
       <figure>
+        <button type="button" class="portrait-zoom" aria-label="Enlarge. A silhouette of one person, not a likeness, labelled Wiebbe Hayes.">
         <img src="assets/silhouettes/hayes.png" alt="A silhouette of one person, not a likeness, labelled Wiebbe Hayes.">
+        </button>
         <figcaption>A silhouette, not a likeness.</figcaption>
       </figure>
       <div>
@@ -160,7 +180,9 @@
 
     <article class="witness" id="witness-wreck">
       <figure>
+        <button type="button" class="portrait-zoom" aria-label="Enlarge. A sailing-ship silhouette for the wreck of the Batavia, not a photograph of the wreck itself.">
         <img src="assets/silhouettes/batavia-wreck.png" alt="A sailing-ship silhouette for the wreck of the Batavia, not a photograph of the wreck itself.">
+        </button>
         <figcaption>A ship silhouette, not a picture of the wreck itself.</figcaption>
       </figure>
       <div>
@@ -322,5 +344,7 @@
 </div>
 
 <script src="assets/app.js"></script>
+<script src="assets/place-time.js"></script>
+
 </body>
 </html>
